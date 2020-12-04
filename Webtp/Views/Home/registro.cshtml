@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "registro";
+}
+<h1>@ViewData["Title"]</h1>
+@if (ViewBag.msg != null)
+{
+    <p>@ViewBag.msg</p>
+}
+
+<p>Registrese para poder descargar nuestro programa</p>
+<form asp-action="registrarse" asp-controller="Home" method="post">
+
+    <input type="text" name="usuario" placeholder="Usuario" />
+    <input type="password" name="password" placeholder="Password" />
+    <input type="text" name="key" placeholder="key" />
+    <input type="submit" value="registrarse" />
+
+</form>

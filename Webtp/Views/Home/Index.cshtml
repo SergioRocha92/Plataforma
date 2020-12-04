@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Editor de Video";
+}
+
+    <div class="text-center">
+        <h1 class="display-4">Bienvenidos al editor de video</h1>
+        @if (ViewBag.sesion == null)
+        {
+            <img src="~/img/app2.png" />
+
+           
+        }
+
+        @if (ViewBag.sesion != null)
+        {
+            <img src="~/img/app2.png" />
+            <p>Usa este link para descargar esta aplicacion <a href="https://docs.microsoft.com/aspnet/core" target="_blank">Descarga aqui</a></p>
+        }
+    </div>
+   

@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "login";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use su usuario y contraseña para acceder a la descarga manual del archivo. </p>
+
+@if (ViewBag.msg!=null)
+{
+<p>@ViewBag.msg</p>
+}
+<form asp-action="logear" asp-controller="Home" method="post">
+
+    <input type="text" name="usuario" placeholder="Usuario" />
+    <input type="password" name="password" placeholder="Password" />
+
+    <input type="submit" value="Iniciar sesión" />
+
+</form>
